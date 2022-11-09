@@ -1,6 +1,7 @@
 # Tugas 7: Elemen Dasar Flutter
 
-Pemrograman Berbasis Platform (CSGE602022) - diselenggarakan oleh Fakultas Ilmu Komputer Universitas Indonesia, Semester Ganjil 2022/2023 \
+Pemrograman Berbasis Platform (CSGE602022) - diselenggarakan oleh Fakultas Ilmu Komputer Universitas Indonesia, Semester Ganjil 2022/2023 
+<br>
 **Nama  : Nadira Maysa Dyandra** \
 **NPM   : 2106632232** \
 **Kelas : A**
@@ -17,7 +18,7 @@ Sedangkan, *Stateful Widget* berlaku sebaliknya, yaitu bersifat dinamis, sehingg
 - `Text`, widget yang digunakan untuk menampilkan *text* pada aplikasi. 
 - `Column`, widget yang digunakan untuk mengatur tata letak atau *layout* widget secara menurun atau vertikal. 
 - `Row`, widget yang digunakan untuk mengatur tata letak atau *layout* widget secara horizontal. 
--`Padding`, widget yang digunakan untuk menambahkan *padding* atau *empty space* di sekitar widget atau banyak widget.
+- `Padding`, widget yang digunakan untuk menambahkan *padding* atau *empty space* di sekitar widget atau banyak widget.
 
 ## `setState()`
 Fungsi `setState()` memberi tahu framework Flutter bahwa ada sesuatu yang berubah pada *state* yang menyebabkannya menjalankan lagi *method build* di bawahnya sehingga tampilan dapat mencerminkan nilai yang telah diperbaharui. 
@@ -93,4 +94,4 @@ Sedangkan, `final` adalah variabel yang diinisialisasi pada saat pertama kali di
     ```
     flutter run
     ```
-7. Lakukan git `add`-`commit`-`push` proyek ke dalam repositori `pbp-flutter-lab`
+7. Lakukan git `add`-`commit`-`push` proyek ke dalam repositori `pbp-flutter-tugas`
