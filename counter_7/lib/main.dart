@@ -1,5 +1,5 @@
+import 'package:counter_7/drawer.dart';
 import 'package:flutter/material.dart';
-
 void main() {
   runApp(const MyApp());
 }
@@ -14,18 +14,18 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const Counter(title: 'Program Counter'),
+      home: const Counter(),
     );
   }
 }
 
 class Counter extends StatefulWidget {
-  const Counter({super.key, required this.title});
-  final String title;
+  const Counter({super.key});
+  final String title = 'Program Counter';
 
   @override
   State<Counter> createState() => _CounterState();
-}
+  }
 
 class _CounterState extends State<Counter> {
   int _counter = 0;
@@ -47,6 +47,7 @@ class _CounterState extends State<Counter> {
       appBar: AppBar(
         title: Text(widget.title),
       ),
+      drawer: const MyDrawer(),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
