@@ -1,7 +1,7 @@
-import 'package:counter_7/data_budget.dart';
+import 'package:counter_7/models/data_budget.dart';
 import 'package:counter_7/drawer.dart';
 import 'package:flutter/material.dart';
-import 'package:counter_7/show_budget.dart';
+import 'package:counter_7/pages/show_budget.dart';
 
 class BudgetForm extends StatefulWidget {
     //final List<Budget> data;
