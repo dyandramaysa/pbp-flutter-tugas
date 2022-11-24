@@ -33,19 +33,16 @@ Secara umum mekanisme pengambilan data JSON dengan bantuan *http package* adalah
 ## Mengimplementasikan *Checklilst* Tugas 9
 1. Melakukan *refactor file* dengan menambahkan folder `models` dan `pages` di dalam folder `lib`. Kemudian pindahkan semua file selain `main.dart` dan `drawer.dart` ke dalam folder `pages` dan `models` apabila sudah terdapat model.
 2. Membuat model yang menyesuaikan dengan data JSON di dalam file `mywatchlist.dart` pada folder `models`.
+3. Menambahkan dependensi HTTP dengan melakukan `flutter pub add http` pada terminal proyek Flutter untuk menambahkan *package* `http`. Kemudian, pada file `android/app/src/main/AndroidManifest.xml`, tambahkan kode berikut untuk memperbolehkan akses internet pada aplikasi Flutter yang sedang dibuat.
   ```
   ...
+      <application>
+      ...
+      </application>
+      <!-- Required to fetch data from the Internet. -->
+      <uses-permission android:name="android.permission.INTERNET" />
+  ...
   ```
-3. Menambahkan dependensi HTTP dengan melakukan `flutter pub add http` pada terminal proyek Flutter untuk menambahkan *package* `http`. Kemudian, pada file `android/app/src/main/AndroidManifest.xml`, tambahkan kode berikut untuk memperbolehkan akses internet pada aplikasi Flutter yang sedang dibuat.
-```
-...
-    <application>
-    ...
-    </application>
-    <!-- Required to fetch data from the Internet. -->
-    <uses-permission android:name="android.permission.INTERNET" />
-...
-```
 4. Mengambil dan mengolah data dari *web service* dengan membuat file `mywatchlist_page.dart` pada folder `lib/pages`. Kemudian, melakukan pengambilan data dari URL https://tugas2nadira.herokuapp.com/mywatchlist/json/ dengan metode `http.get` yang dilakukan di dalam folder `fetch` pada file `fetch_mywatchlist.dart`.
 5. Menampilkan judul film pada mywatchlist_page.dart dengan bantuan mywatchlist_item_card.dart untuk menampilkan data di dalam card dan menampilkan detail film pada mywatchlist_detail.dart dalam folder `lib/pages`.
 6. Melakuan `add`, `commit`, dan `push` ke dalam repositori GitHub.
